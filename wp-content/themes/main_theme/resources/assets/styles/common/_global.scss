@@ -1,0 +1,30 @@
+div.wrap {
+    width: 100%;
+    padding: $wrap_padding;
+}
+p {
+  margin-block-start: 0;
+  margin-block-end:0;
+  margin-inline-start: 0;
+  margin-inline-end:0
+}
+html {
+  //cursor: none;
+  //width: 100vw;
+  //overflow-x: hidden;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@font-face {
+  font-family: main_font;
+  src: url(../fonts/FuturaLT.ttf);
+}
+
+body {
+  font-family: main_font;
+}
+
+
+

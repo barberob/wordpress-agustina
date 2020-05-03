@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "flickity": "^2.2.1",
+    "flickity-imagesloaded": "^2.0.0",
+    "gsap": "^3.2.6",
+    "normalize-wheel": "^1.0.1",
+    "wheel": "^1.0.0"
+  }
+}

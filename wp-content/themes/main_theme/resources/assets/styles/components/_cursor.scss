@@ -1,0 +1,27 @@
+div.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: 50;
+  background-color: black;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: -50% -50%;
+  p {
+    transform: scale(0);
+    opacity: 0;
+    color: white;
+  }
+}
+
+div.cursor  {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  z-index: 50;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+}
