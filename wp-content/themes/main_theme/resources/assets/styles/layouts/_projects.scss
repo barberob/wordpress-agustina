@@ -2,13 +2,14 @@ body.archive-projects {
 
   div.wrap {
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: flex-start;
   }
+
   div.project {
-    margin: auto;
     height: 80vh;
     display: flex;
+    align-self: flex-start;
     align-items: center;
     color: black;
     margin-bottom: 120px ;
@@ -37,6 +38,11 @@ body.archive-projects {
         height: 100%;
       }
     }
+
+    div.resize_container {
+      height: 100%;
+      display: flex;
+    }
   img {
     height: 100%;
   }
@@ -44,13 +50,12 @@ body.archive-projects {
     font-family: main_font;
   }
   div.right_container {
-    margin-left: 70px;
+    margin-left: 60px;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
-    width: max-content;
   }
   div.infos_container {
     >p {
@@ -63,7 +68,8 @@ body.archive-projects {
     h2.title {
       font-size: 5em;
       text-transform: uppercase;
-      width: max-content;
+      display: block;
+      word-break: break-word;
     }
     a {
       text-decoration: none;

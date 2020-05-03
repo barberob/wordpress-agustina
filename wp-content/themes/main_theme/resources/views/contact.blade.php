@@ -8,8 +8,8 @@
   <div class="contact_container">
     <img src="{{ $thumbnail }}" alt="">
     <div class="infos_container">
-      <h2>N'hesitez à me faire un coucou</h2>
-      <p>contact@benoitbarberot.fr</p>
+      <h2>{{ $main_text }}</h2>
+      <a data-cursor="salut" href="mailto:{{$mail}}" ><p>{{$mail}}</p> </a>
     </div>
 
   </div>

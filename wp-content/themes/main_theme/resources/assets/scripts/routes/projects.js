@@ -1,11 +1,12 @@
 import $ from 'jquery';
-
+import lax from 'lax.js';
 
 export default {
 
   init() {
     this.initEls();
     this.initEvents();
+    this.initParallax();
   },
 
   initEls() {
@@ -30,4 +31,17 @@ export default {
       $(event.currentTarget).removeClass('active');
     });
   },
+
+  initParallax() {
+    window.onload = function() {
+      lax.setup(); // init
+
+      const updateLax = () => {
+        lax.update(window.scrollY);
+        window.requestAnimationFrame(updateLax)
+      };
+
+      window.requestAnimationFrame(updateLax);
+    }
+  }
 };

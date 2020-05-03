@@ -17,7 +17,7 @@ export default {
     };
     this.timelines = {
       top_animation : gsap.timeline({repeat:0,paused : true})
-        .from(this.$els.letters_container,{duration : 1, transform: "translateY(201%)",ease: "power1.out",stagger:0.025})
+        .from(this.$els.letters_container,{duration : 1, transform: "translateY(201%)",ease: "power1.out",stagger:0.05})
         .from(this.$els.technologies, {duration:0.5, opacity : 0 }, "-=0.25")
         .from(this.$els.scroll_indicator, {duration:0.5, opacity : 0})
 

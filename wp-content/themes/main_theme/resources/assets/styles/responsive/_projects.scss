@@ -1,7 +1,101 @@
 
-@media all and (max-width: 980px){
+@media all and (max-width: 1440px){
 
-  div.carousel-cell {
-    padding: 0 0;
+  body.archive-projects div.project div.infos_container h2.title {
+    font-size: 3.5em;
+  }
+
+  body.archive-projects div.project {
+    height: 60vh;
+  }
+}
+
+@media all and (max-width: 1200px){
+
+  body.archive-projects div.project {
+    height: 55vh;
+    div.technology {
+      width: 60px;
+    }
+  }
+}
+
+
+@media all and (max-width: 1024px){
+
+  body.archive-projects div.project div.infos_container h2.title {
+    font-size: 2.5em;
+  }
+
+  body.archive-projects div.project {
+    height: 50vh;
+    div.right_container {
+      margin-left: 30px;
+    }
+  }
+
+}
+
+
+
+@media all and (max-width:900px){
+
+
+  body.archive-projects {
+    div.wrap {
+      justify-content: center;
+    }
+    div.project {
+      height: inherit;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 120px;
+
+      img {
+        max-height: 50vh;
+      }
+      div.right_container {
+        margin-left: 0;
+        width: 100%;
+        p.index {
+          display: none;
+        }
+      }
+      div.technology {
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 15px;
+        div.line {
+          display: none;
+        }
+        p {
+          transform: rotate(0);
+          padding-right: 0;
+          width: 100%;
+        }
+      }
+      div.infos_container {
+        margin-top: 15px;
+        div.button {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+@media all and (max-width:475px) {
+  body.archive-projects {
+
+    div.project {
+
+      img {
+        max-height: inherit;
+        width: 100%;
+      }
+    }
   }
 }

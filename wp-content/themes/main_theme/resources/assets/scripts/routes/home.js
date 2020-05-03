@@ -13,13 +13,23 @@ export default {
   initEls() {
     this.$els = {
       button : $('div.button'),
-      thumbnail : $('div.thumbnail_container')
+      thumbnail : $('div.thumbnail_container'),
+      title : $('div.description_container h2'),
+      text : $('div.description_container p'),
+      link : $('div.description_container a')
+    };
+    this.timeline = {
+      intro : gsap.timeline({repeat:0,paused : true})
+        .to( this.$els.thumbnail, {width : '100%', duration : 1.5, ease : 'power2.out'})
+        .from( this.$els.title, {opacity: 0, duration : 0.5, ease : 'power2.out'},"-=0.5")
+        .from( this.$els.text, {opacity: 0, duration : 0.5, ease : 'power2.out'})
+        .from( this.$els.link, {opacity: 0, duration : 0.5, ease : 'power2.out'},"-=0.5")
     }
   },
 
   initEvents() {
     $(document).ready(() => {
-       gsap.to( this.$els.thumbnail, {width : '100%', duration : 1.5, ease : 'power2.out'})
+      this.timeline.intro.play();
     });
 
     this.$els.button.mouseenter((event) => {

@@ -1,0 +1,38 @@
+@media all and (max-width: 1024px) {
+
+  body.contact {
+    div.contact_container img {
+      width: 60%;
+    }
+    div.contact_container {
+      flex-direction: column;
+    }
+    div.infos_container {
+      margin-top: 10%;
+      text-align: center;
+      margin-bottom: 120px;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+
+  body.contact {
+    h1 {
+      font-size: 3em;
+    }
+    div.contact_container img {
+      width: 80%;
+    }
+    div.infos_container {
+      margin-top: 15%;
+    }
+  }
+}
+
+@media all and (max-width: 475px) {
+
+  body.contact {
+    font-size: 0.7rem;
+  }
+}

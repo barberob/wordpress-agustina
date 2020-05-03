@@ -25,3 +25,11 @@ div.cursor  {
   position: fixed;
   pointer-events: none;
 }
+
+
+@media all and (max-width: 1440px) {
+  div.cursor,
+  div.circle {
+    display: none;
+  }
+}

@@ -15,27 +15,12 @@
 @import "common/reset";
 @import "common/variables";
 @import "common/global";
-//@import "components/buttons";
-//@import "components/comments";
-//@import "components/forms";
-//@import "components/wp-classes";
+
 @import "components/projects_button";
 @import "components/cursor";
 
-@import "layouts/header";
-@import "layouts/sidebar";
-@import "layouts/footer";
-@import "layouts/index";
-@import "layouts/pages";
-@import "layouts/posts";
-@import "layouts/tinymce";
-@import "layouts/projects";
-@import "layouts/single_project";
-@import "layouts/contact";
+@import "layouts/*";
 
-@import "responsive/index";
-@import "responsive/header";
-@import "responsive/single_project";
-@import "responsive/projects";
+@import "responsive/*";
 
 
