@@ -9,7 +9,7 @@ p {
   margin-inline-end:0
 }
 html {
-  //cursor: none;
+  cursor: none;
   //width: 100vw;
   //overflow-x: hidden;
   * {
@@ -24,6 +24,10 @@ html {
 
 body {
   font-family: main_font;
+}
+
+a {
+  cursor:none;
 }
 
 
