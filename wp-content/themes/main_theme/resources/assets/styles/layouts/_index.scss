@@ -8,12 +8,15 @@ body.home {
     width: 100%;
     justify-content: space-evenly;
 
-    div.thumbnail_container {
-      width: 0;
-      height: 80vh;
-      display: block;
-      background-position: center;
-      margin-top: 120px;
+    div.animation_container {
+      width: 50%;
+      div.thumbnail_container {
+        width: 0;
+        height: 80vh;
+        display: block;
+        background-position: center;
+        margin-top: 120px;
+      }
     }
 
     div.description_container {
@@ -31,9 +34,11 @@ body.home {
       }
       a {
         color: black;
-        margin-top: 60px;
+        margin-top: 30px;
       }
+
     }
+
 
   }
 }

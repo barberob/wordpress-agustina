@@ -1,0 +1,47 @@
+@media all and (max-width: 1440px) {
+  body.home div.intro_container div.description_container {
+    margin-left: 60px;
+    width: 45%;
+  }
+}
+
+
+@media all and (max-width: 1024px) {
+
+  body.home div.intro_container {
+    flex-direction: column;
+    div.animation_container {
+      width: 100%;
+      margin-bottom: 60px;
+      div.thumbnail_container {
+        height: 60vh;
+        background-size: 300%;
+      }
+    }
+  }
+  body.home div.intro_container div.description_container {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+
+
+@media all and (max-width: 768px) {
+
+  body.home div.intro_container div.animation_container  div.thumbnail_container {
+   background-size: 360%;
+  }
+
+}
+
+
+
+@media all and (max-width: 500px) {
+
+  body.home div.intro_container div.animation_container  div.thumbnail_container {
+    background-size: 410%;
+    height: 50vh;
+  }
+
+}

@@ -5,7 +5,7 @@
 <div class="inner_wrap">
     <div class="project_top">
       <div class="title_container">
-        <h1>
+        <h1 >
           @foreach($split_title as $letter)
             <span class="letter_container">{{$letter}}</span>
           @endforeach
@@ -18,7 +18,7 @@
           <span class="separator"></span>
         @endforeach
       </div>
-      <span data-cursor="scroll" class="scroll_indicator">
+      <span class="scroll_indicator">
         @include('svg.arrow-down')
       </span>
     </div>

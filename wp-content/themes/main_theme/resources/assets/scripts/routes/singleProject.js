@@ -21,7 +21,7 @@ export default {
         .from(this.$els.technologies, {duration:0.5, opacity : 0 }, "-=0.25")
         .from(this.$els.scroll_indicator, {duration:0.5, opacity : 0})
 
-    }
+    };
   },
 
   initEvents() {

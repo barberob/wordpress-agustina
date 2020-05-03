@@ -27,4 +27,20 @@ body {
 }
 
 
+@media all and (max-width: 1440px) {
+  div.wrap {
+    padding: $wrap_padding_1440;
+  }
+}
 
+@media all and (max-width: 768px) {
+  div.wrap {
+    padding: $wrap_padding_768;
+  }
+}
+
+@media all and (max-width: 375px) {
+  div.wrap {
+    padding: $wrap_padding_375;
+  }
+}

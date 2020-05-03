@@ -3,7 +3,7 @@
 <div class="inner_wrap">
     <div class="project_top">
       <div class="title_container">
-        <h1>
+        <h1 >
           <?php $__currentLoopData = $split_title; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $letter): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <span class="letter_container"><?php echo e($letter); ?></span>
           <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
@@ -16,7 +16,7 @@
           <span class="separator"></span>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
       </div>
-      <span data-cursor="scroll" class="scroll_indicator">
+      <span class="scroll_indicator">
         <?php echo $__env->make('svg.arrow-down', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
       </span>
     </div>

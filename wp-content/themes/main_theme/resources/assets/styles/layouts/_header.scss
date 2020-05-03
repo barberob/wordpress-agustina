@@ -1,18 +1,24 @@
 div.menu {
   display: flex;
   align-items: center;
+  justify-content: center;
   transform: translateY(-100%);
   position: fixed;
   width: 100%;
   padding: $wrap_padding;
   height: 100vh;
-  z-index:2;
+  z-index:15;
+  top: 0;
+  left: 0;
   background-color: #f5f5f5 ;
   font-family: main_font;
   text-transform: uppercase;
+
+
+
   ul {
     margin: 30px 0;
-    font-size: 4em;
+    font-size: 10em;
     position: relative;
     li {
       position: relative;
@@ -21,7 +27,11 @@ div.menu {
     li.menu-item {
       display: block;
       text-align: inherit;
+      &:nth-of-type(n+2) {
+        margin: 60px 0;
+      }
     }
+
   }
   a {
     color: black;
@@ -31,7 +41,7 @@ div.menu {
 
 div.top_container {
   width:100%;
-  padding: 0 140px;
+  padding: $wrap_padding;
   top: 3vh;
   display: flex;
   align-items: baseline;
@@ -56,4 +66,23 @@ div.top_container {
   }
 }
 
+@media all and (max-width: 1440px) {
+  div.top_container{
+    padding: $wrap_padding_1440;
+  }
+}
 
+
+
+@media all and (max-width: 768px ) {
+  div.top_container{
+    padding: $wrap_padding_768;
+  }
+}
+
+
+@media all and (max-width: 375px ) {
+  div.top_container{
+    padding: $wrap_padding_375;
+  }
+}

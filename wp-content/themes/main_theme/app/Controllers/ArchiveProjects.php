@@ -9,6 +9,7 @@ class ArchiveProjects extends Controller
      public function allPosts() {
          $args = array(
              'post_type' => 'project',
+             'order'=>'ASC'
          );
 
          $posts = get_posts($args);

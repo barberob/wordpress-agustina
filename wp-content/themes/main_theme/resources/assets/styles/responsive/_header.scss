@@ -1,0 +1,24 @@
+
+@media all and (max-width: 1024px) {
+  div.menu ul {
+    font-size: 8em;
+  }
+}
+
+@media all and (max-width: 768px) {
+  div.menu ul {
+    font-size: 5em;
+  }
+}
+
+@media all and (max-width: 425px) {
+  div.menu ul {
+    font-size: 4em;
+  }
+}
+
+@media all and (max-width: 375px) {
+  div.menu ul {
+    font-size: 2em;
+  }
+}
